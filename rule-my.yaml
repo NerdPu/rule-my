@@ -435,6 +435,7 @@ proxy-groups:
   - 🇰🇷 韩国节点
   - 🚀 手动切换
   - DIRECT
+
 rule-providers:
   LocalAreaNetwork:
     type: http
@@ -852,6 +853,16 @@ rule-providers:
     header:
       User-Agent:
       - clash.meta
+  Muse:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/jinxinkai/clash-ai-rules/master/Muse.yaml
+    path: ./ruleset/shunt/Muse.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
 
 rules:
   # 本地域名先直连；随后使用局域网、白名单与广告规则
@@ -909,14 +920,48 @@ rules:
   - "RULE-SET,aiXcoder,🇨🇳 国内AI"
   - "RULE-SET,Civitai,🤖 AI 综合"
   - "RULE-SET,Notion,🤖 AI 综合"
-  # ShuntRules 未收录的境外 AI 站（Hugging Face / Perplexity / Grok / Midjourney / Character.AI）
+  - "RULE-SET,Muse,🤖 AI 综合"
+  # Meta Muse + Meta AI 相关（手动补充，防止 rule-provider 缺失）
+  - "DOMAIN-SUFFIX,muse.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,metaaivm.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,meta.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,llama.com,🤖 AI 综合"
+  - "DOMAIN,ai.meta.com,🤖 AI 综合"
+  - "DOMAIN,ai.developer.meta.com,🤖 AI 综合"
+  # ShuntRules 未完全覆盖的境外 AI / 编程 / 生成类
   - "DOMAIN-SUFFIX,huggingface.co,🤖 AI 综合"
   - "DOMAIN-SUFFIX,hf.co,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,hf.space,🤖 AI 综合"
   - "DOMAIN-SUFFIX,perplexity.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,pplx.ai,🤖 AI 综合"
   - "DOMAIN-SUFFIX,x.ai,🤖 AI 综合"
   - "DOMAIN-SUFFIX,grok.com,🤖 AI 综合"
   - "DOMAIN-SUFFIX,midjourney.com,🤖 AI 综合"
   - "DOMAIN-SUFFIX,character.ai,🤖 AI 综合"
+  # 编程 / Agent 工具
+  - "DOMAIN-SUFFIX,cursor.sh,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,cursor.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,cursorapi.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,cursor-cdn.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,poe.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,poecdn.net,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,openrouter.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,mistral.ai,🤖 AI 综合"
+  # 生成类（图像/视频/音频）
+  - "DOMAIN-SUFFIX,runwayml.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,runway.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,suno.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,suno.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,elevenlabs.io,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,elevenlabs.com,🤖 AI 综合"
+  # OpenAI / Claude 辅助域名补充
+  - "DOMAIN-SUFFIX,oaistatic.com,💬 OpenAi"
+  - "DOMAIN-SUFFIX,oaiusercontent.com,💬 OpenAi"
+  - "DOMAIN-SUFFIX,chatgpt.com,💬 OpenAi"
+  - "DOMAIN-SUFFIX,sora.com,💬 OpenAi"
+  - "DOMAIN-SUFFIX,claudeusercontent.com,🎄 Claude"
+  - "DOMAIN-SUFFIX,claude.com,🎄 Claude"
+  - "DOMAIN-SUFFIX,clau.de,🎄 Claude"
   # 通讯与推送；FCM 必须在 GoogleCN、Google 前
   - "RULE-SET,Telegram,📲 电报消息"
   - "RULE-SET,Discord,💬 Discord"
