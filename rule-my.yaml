@@ -1,310 +1,451 @@
-proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🚀 手动切换
-    include-all: true
-    type: select
-  - name: ♻️ 自动选择
-    type: url-test
-    include-all: true
-    interval: 300
-    tolerance: 50
-  - name: 📲 电报消息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 💬 OpenAi
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: ✨ Copilot
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🎨 Gemini
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🎄 Claude
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 📹 油管视频
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🎥 奈飞视频
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🎥 奈飞节点
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 📺 巴哈姆特
-    type: select
-    proxies:
-      - 🇨🇳 台湾节点
-      - 🇭🇰 香港节点
-      - 🚀 节点选择
-      - 🚀 手动切换
-      - DIRECT
-  - name: 📺 哔哩哔哩
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🇨🇳 台湾节点
-      - 🇭🇰 香港节点
-  - name: 🌍 国外媒体
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🌏 国内媒体
-    type: select
-    proxies:
-      - DIRECT
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: Ⓜ️ 微软Bing
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: Ⓜ️ 微软云盘
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 🎮 游戏平台
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 🎶 网易音乐
-    type: select
-    include-all: true
-    filter: (?i)网易|音乐|NetEase|Music
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 广告拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-      - DIRECT
-  - name: 🇭🇰 香港节点
-    include-all: true
-    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇯🇵 日本节点
-    include-all: true
-    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇺🇲 美国节点
-    include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇨🇳 台湾节点
-    include-all: true
-    filter: (?i)台|新北|彰化|TW|Taiwan
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇸🇬 狮城节点
-    include-all: true
-    filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇰🇷 韩国节点
-    include-all: true
-    filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🎥 奈飞节点
-    include-all: true
-    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
-    type: select
+# Clash / Mihomo 分流片段：与节点订阅合并使用。
+# 服务规则参考 https://github.com/luestr/ShuntRules ；基础白名单/广告/中国列表使用 ACL4SSR。
+# USER-AGENT 条目不被 Mihomo 支持，内核会跳过；此文件使用域名/IP和下载器进程规则。
+# 自动测速要求 HTTP 204；过滤订阅信息项；策略组候选顺序和默认选项保持不变。
 
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🚀 手动切换
+  include-all: true
+  type: select
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+- name: ♻️ 自动选择
+  type: url-test
+  include-all: true
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 📲 电报消息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 💬 OpenAi
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: ✨ Copilot
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🎨 Gemini
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🎄 Claude
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🤖 AI 综合
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 💬 OpenAi
+  - ✨ Copilot
+  - 🎨 Gemini
+  - 🎄 Claude
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🇨🇳 国内AI
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🚀 手动切换
+- name: 📹 油管视频
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🎥 奈飞视频
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎥 奈飞节点
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 📺 巴哈姆特
+  type: select
+  proxies:
+  - 🇨🇳 台湾节点
+  - 🇭🇰 香港节点
+  - 🚀 节点选择
+  - 🚀 手动切换
+  - DIRECT
+- name: 📺 哔哩哔哩
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🇨🇳 台湾节点
+  - 🇭🇰 香港节点
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🌏 国内媒体
+  type: select
+  proxies:
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+- name: 📢 谷歌FCM
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+- name: Ⓜ️ 微软Bing
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+- name: Ⓜ️ 微软云盘
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - DIRECT
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+- name: 🎮 游戏平台
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+- name: 🎶 网易音乐
+  type: select
+  include-all: true
+  filter: (?i)网易|音乐|NetEase|Music
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 广告拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🇭🇰 香港节点
+  include-all: true
+  filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 🇯🇵 日本节点
+  include-all: true
+  filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 🇺🇲 美国节点
+  include-all: true
+  filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(^|[^A-Za-z])US(?=$|[^A-Za-z])|United States
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 🇨🇳 台湾节点
+  include-all: true
+  filter: (?i)台|新北|彰化|TW|Taiwan
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 🇸🇬 狮城节点
+  include-all: true
+  filter: (?i)新加坡|坡|狮城|SG|Singapore
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 🇰🇷 韩国节点
+  include-all: true
+  filter: (?i)KR|Korea|KOR|首尔|韩|韓
+  type: url-test
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 50
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+  expected-status: 204
+  timeout: 5000
+  lazy: true
+- name: 🎥 奈飞节点
+  include-all: true
+  filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+  type: select
+  exclude-filter: (?i)剩余流量|流量重置|套餐到期|到期时间|距离下次重置|官网|订阅更新|traffic.*remaining|expire(?:s|d)?\s*[:：]
+- name: 🎵 Apple Music
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+- name: 🔎 谷歌服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🐙 GitHub
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🎧 Spotify
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 💬 Discord
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+  - DIRECT
+- name: 🎵 TikTok
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
 rule-providers:
   LocalAreaNetwork:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
-    path: ./ruleset/LocalAreaNetwork.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Lan.yaml
+    path: ./ruleset/shunt/Lan.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   UnBan:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
     path: ./ruleset/UnBan.list
@@ -327,12 +468,15 @@ rule-providers:
     format: text
     type: http
   GoogleFCM:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
-    path: ./ruleset/GoogleFCM.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/GoogleFCM.yaml
+    path: ./ruleset/shunt/GoogleFCM.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   GoogleCN:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
     path: ./ruleset/GoogleCN.list
@@ -341,118 +485,165 @@ rule-providers:
     format: text
     type: http
   SteamCN:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
-    path: ./ruleset/SteamCN.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
-  Bing:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
-    path: ./ruleset/Bing.list
     behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  OneDrive:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
-    path: ./ruleset/OneDrive.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Microsoft:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
-    path: ./ruleset/Microsoft.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Apple:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
-    path: ./ruleset/Apple.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Telegram:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
-    path: ./ruleset/Telegram.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  OpenAi:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
-    path: ./ruleset/OpenAi.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  NetEaseMusic:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
-    path: ./ruleset/NetEaseMusic.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Epic:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
-    path: ./ruleset/Epic.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Origin:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
-    path: ./ruleset/Origin.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Sony:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
-    path: ./ruleset/Sony.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Steam:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
-    path: ./ruleset/Steam.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Nintendo:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
-    path: ./ruleset/Nintendo.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  YouTube:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
-    path: ./ruleset/YouTube.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Netflix:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
-    path: ./ruleset/Netflix.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  Bahamut:
-    # url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
-    url: https://rule.kelee.one/Clash/Bahamut.yaml
-    path: ./ruleset/Bahamut.list
-    behavior: classical
-    interval: 86400
     format: yaml
+    url: https://rule.kelee.one/Clash/SteamCN.yaml
+    path: ./ruleset/shunt/SteamCN.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Bing:
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Bing.yaml
+    path: ./ruleset/shunt/Bing.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  OneDrive:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/OneDrive.yaml
+    path: ./ruleset/shunt/OneDrive.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Microsoft:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Microsoft.yaml
+    path: ./ruleset/shunt/Microsoft.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Apple:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Apple.yaml
+    path: ./ruleset/shunt/Apple.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Telegram:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Telegram.yaml
+    path: ./ruleset/shunt/Telegram.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  OpenAi:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/OpenAI.yaml
+    path: ./ruleset/shunt/OpenAI.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/NetEaseMusic.yaml
+    path: ./ruleset/shunt/NetEaseMusic.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Epic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Epic.yaml
+    path: ./ruleset/shunt/Epic.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Origin:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Origin.yaml
+    path: ./ruleset/shunt/Origin.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Sony:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/PlayStation.yaml
+    path: ./ruleset/shunt/PlayStation.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Steam:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Steam.yaml
+    path: ./ruleset/shunt/Steam.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Nintendo:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Nintendo.yaml
+    path: ./ruleset/shunt/Nintendo.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  YouTube:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/YouTube.yaml
+    path: ./ruleset/shunt/YouTube.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Netflix:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Netflix.yaml
+    path: ./ruleset/shunt/Netflix.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Bahamut:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Bahamut.yaml
+    path: ./ruleset/shunt/Bahamut.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   BilibiliHMT:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
     path: ./ruleset/BilibiliHMT.list
@@ -461,26 +652,35 @@ rule-providers:
     format: text
     type: http
   Bilibili:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
-    path: ./ruleset/Bilibili.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/BiliBili.yaml
+    path: ./ruleset/shunt/BiliBili.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   ChinaMedia:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
-    path: ./ruleset/ChinaMedia.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/ChinaMedia.yaml
+    path: ./ruleset/shunt/ChinaMedia.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   ProxyMedia:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
-    path: ./ruleset/ProxyMedia.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/GlobalMedia.yaml
+    path: ./ruleset/shunt/GlobalMedia.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   ProxyGFWlist:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
     path: ./ruleset/ProxyGFWlist.list
@@ -491,94 +691,268 @@ rule-providers:
   ChinaDomain:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
-    behavior: domain
+    behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaCompanyIp:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
-    behavior: ipcidr
+    behavior: classical
     interval: 86400
     format: text
     type: http
   Download:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
-    path: ./ruleset/Download.list
-    behavior: classical
-    interval: 86400
-    format: text
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Download.yaml
+    path: ./ruleset/shunt/Download.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   Copilot:
+    type: http
+    behavior: classical
+    format: yaml
     url: https://rule.kelee.one/Clash/Copilot.yaml
-    path: ./ruleset/Copilot.yaml
-    behavior: classical
+    path: ./ruleset/shunt/Copilot.yaml
     interval: 86400
-    format: yaml
-    type: http
+    header:
+      User-Agent:
+      - clash.meta
   Claude:
+    type: http
+    behavior: classical
+    format: yaml
     url: https://rule.kelee.one/Clash/Claude.yaml
-    path: ./ruleset/Claude.yaml
-    behavior: classical
+    path: ./ruleset/shunt/Claude.yaml
     interval: 86400
-    format: yaml
-    type: http
+    header:
+      User-Agent:
+      - clash.meta
   Gemini:
+    type: http
+    behavior: classical
+    format: yaml
     url: https://rule.kelee.one/Clash/Gemini.yaml
-    path: ./ruleset/Gemini.yaml
-    behavior: classical
+    path: ./ruleset/shunt/Gemini.yaml
     interval: 86400
-    format: yaml
+    header:
+      User-Agent:
+      - clash.meta
+  Anthropic:
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Anthropic.yaml
+    path: ./ruleset/shunt/Anthropic.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  BardAI:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/BardAI.yaml
+    path: ./ruleset/shunt/BardAI.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  aiXcoder:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/aiXcoder.yaml
+    path: ./ruleset/shunt/aiXcoder.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Civitai:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Civitai.yaml
+    path: ./ruleset/shunt/Civitai.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Notion:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Notion.yaml
+    path: ./ruleset/shunt/Notion.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
   Apple Music:
+    type: http
+    behavior: classical
+    format: yaml
     url: https://rule.kelee.one/Clash/AppleMusic.yaml
-    path: ./ruleset/AppleMusic.yaml
-    behavior: classical
+    path: ./ruleset/shunt/AppleMusic.yaml
     interval: 86400
-    format: yaml
+    header:
+      User-Agent:
+      - clash.meta
+  Google:
     type: http
-  Other:
-    url: https://raw.githubusercontent.com/NerdPu/rule-my/refs/heads/main/test.yaml
-    path: ./ruleset/Other.yaml
     behavior: classical
-    interval: 86400
     format: yaml
+    url: https://rule.kelee.one/Clash/Google.yaml
+    path: ./ruleset/shunt/Google.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  GitHub:
     type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/GitHub.yaml
+    path: ./ruleset/shunt/GitHub.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Spotify:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Spotify.yaml
+    path: ./ruleset/shunt/Spotify.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  Discord:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/Discord.yaml
+    path: ./ruleset/shunt/Discord.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
+  TikTok:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://rule.kelee.one/Clash/TikTok.yaml
+    path: ./ruleset/shunt/TikTok.yaml
+    interval: 86400
+    header:
+      User-Agent:
+      - clash.meta
 
 rules:
+  # 本地域名先直连；随后使用局域网、白名单与广告规则
+  - "DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连"
+  - "DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连"
+  - "DOMAIN-SUFFIX,internal,🎯 全球直连"
+  - "DOMAIN-SUFFIX,lan,🎯 全球直连"
+  - "DOMAIN-SUFFIX,local,🎯 全球直连"
+  - "DOMAIN-SUFFIX,localhost,🎯 全球直连"
+  - "DOMAIN-SUFFIX,miwifi.com,🎯 全球直连"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
-  - "RULE-SET,GoogleFCM,📢 谷歌FCM"
-  - "RULE-SET,GoogleCN,🎯 全球直连"
-  - "RULE-SET,SteamCN,🎯 全球直连"
-  - "RULE-SET,Bing,Ⓜ️ 微软Bing"
-  - "RULE-SET,OneDrive,Ⓜ️ 微软云盘"
-  - "RULE-SET,Microsoft,Ⓜ️ 微软服务"
-  - "RULE-SET,Apple,🍎 苹果服务"
-  - "RULE-SET,Telegram,📲 电报消息"
+  # 原下载器进程优先直连，避免被 GitHub 等新增服务规则抢占
+  - "PROCESS-NAME,aria2c.exe,🎯 全球直连"
+  - "PROCESS-NAME,fdm.exe,🎯 全球直连"
+  - "PROCESS-NAME,Folx.exe,🎯 全球直连"
+  - "PROCESS-NAME,NetTransport.exe,🎯 全球直连"
+  - "PROCESS-NAME,Thunder.exe,🎯 全球直连"
+  - "PROCESS-NAME,Transmission.exe,🎯 全球直连"
+  - "PROCESS-NAME,uTorrent.exe,🎯 全球直连"
+  - "PROCESS-NAME,WebTorrent.exe,🎯 全球直连"
+  - "PROCESS-NAME,WebTorrent Helper.exe,🎯 全球直连"
+  - "PROCESS-NAME,qbittorrent.exe,🎯 全球直连"
+  - "PROCESS-NAME,DownloadService.exe,🎯 全球直连"
+  - "PROCESS-NAME,Weiyun.exe,🎯 全球直连"
+  - "PROCESS-NAME,baidunetdisk.exe,🎯 全球直连"
+  # 明确区分 GitHub Copilot 与 GitHub；Qwen 等国内 AI 归入 🇨🇳 国内AI
+  - "DOMAIN,api.business.githubcopilot.com,✨ Copilot"
+  - "DOMAIN-SUFFIX,githubcopilot.com,✨ Copilot"
+  - "DOMAIN,copilot-proxy.githubusercontent.com,✨ Copilot"
+  - "DOMAIN,copilot-telemetry.githubusercontent.com,✨ Copilot"
+  - "DOMAIN-SUFFIX,qwen.ai,🇨🇳 国内AI"
+  # 国内 AI 域名直连优先（可在 🇨🇳 国内AI 组切换为代理）
+  - "DOMAIN,tongyi.aliyun.com,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,deepseek.com,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,moonshot.cn,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,kimi.com,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,doubao.com,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,volcengine.com,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,zhipuai.cn,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,bigmodel.cn,🇨🇳 国内AI"
+  - "DOMAIN,yiyan.baidu.com,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,xfyun.cn,🇨🇳 国内AI"
+  - "DOMAIN-SUFFIX,minimax.chat,🇨🇳 国内AI"
+  # AI 专用规则优先；OpenAI 在 Copilot 前，避免其合并规则抢占 ChatGPT
   - "RULE-SET,OpenAi,💬 OpenAi"
   - "RULE-SET,Gemini,🎨 Gemini"
   - "RULE-SET,Claude,🎄 Claude"
   - "RULE-SET,Copilot,✨ Copilot"
-  - "RULE-SET,Other,✨ Copilot"
+  - "RULE-SET,Anthropic,🎄 Claude"
+  - "RULE-SET,BardAI,🎨 Gemini"
+  # aiXcoder 归入国内 AI；Civitai/Notion 及境外补充站走 🤖 AI 综合
+  - "RULE-SET,aiXcoder,🇨🇳 国内AI"
+  - "RULE-SET,Civitai,🤖 AI 综合"
+  - "RULE-SET,Notion,🤖 AI 综合"
+  # ShuntRules 未收录的境外 AI 站（Hugging Face / Perplexity / Grok / Midjourney / Character.AI）
+  - "DOMAIN-SUFFIX,huggingface.co,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,hf.co,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,perplexity.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,x.ai,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,grok.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,midjourney.com,🤖 AI 综合"
+  - "DOMAIN-SUFFIX,character.ai,🤖 AI 综合"
+  # 通讯与推送；FCM 必须在 GoogleCN、Google 前
+  - "RULE-SET,Telegram,📲 电报消息"
+  - "RULE-SET,Discord,💬 Discord"
+  - "RULE-SET,GoogleFCM,📢 谷歌FCM"
+  # 音乐与视频专用规则优先于 Apple、Google 和聚合媒体规则
+  - "RULE-SET,Apple Music,🎵 Apple Music"
+  - "RULE-SET,Spotify,🎧 Spotify"
   - "RULE-SET,NetEaseMusic,🎶 网易音乐"
+  - "RULE-SET,BilibiliHMT,📺 哔哩哔哩"
+  - "RULE-SET,Bilibili,📺 哔哩哔哩"
+  - "RULE-SET,YouTube,📹 油管视频"
+  - "RULE-SET,Netflix,🎥 奈飞视频"
+  - "RULE-SET,Bahamut,📺 巴哈姆特"
+  - "RULE-SET,TikTok,🎵 TikTok"
+  # 具体服务先于微软、苹果等大类；国内 Steam CDN 仍直连
+  - "RULE-SET,SteamCN,🎯 全球直连"
+  - "RULE-SET,Bing,Ⓜ️ 微软Bing"
+  - "RULE-SET,OneDrive,Ⓜ️ 微软云盘"
+  - "RULE-SET,GitHub,🐙 GitHub"
+  - "RULE-SET,GoogleCN,🎯 全球直连"
+  - "RULE-SET,Google,🔎 谷歌服务"
+  - "RULE-SET,Microsoft,Ⓜ️ 微软服务"
+  - "RULE-SET,Apple,🍎 苹果服务"
+  # 游戏与聚合媒体
   - "RULE-SET,Epic,🎮 游戏平台"
   - "RULE-SET,Origin,🎮 游戏平台"
   - "RULE-SET,Sony,🎮 游戏平台"
   - "RULE-SET,Steam,🎮 游戏平台"
   - "RULE-SET,Nintendo,🎮 游戏平台"
-  - "RULE-SET,YouTube,📹 油管视频"
-  - "RULE-SET,Netflix,🎥 奈飞视频"
-  - "RULE-SET,Bahamut,📺 巴哈姆特"
-  - "RULE-SET,BilibiliHMT,📺 哔哩哔哩"
-  - "RULE-SET,Bilibili,📺 哔哩哔哩"
   - "RULE-SET,ChinaMedia,🌏 国内媒体"
   - "RULE-SET,ProxyMedia,🌍 国外媒体"
+  # 下载站域名补充直连；下载器进程已在服务分流前匹配
+  - "RULE-SET,Download,🎯 全球直连"
+  # 海外通用规则、国内域名/IP 与最终兜底
   - "RULE-SET,ProxyGFWlist,🚀 节点选择"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
   - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
-  - "RULE-SET,Download,🎯 全球直连"
   - "GEOIP,CN,🎯 全球直连"
   - "MATCH,🐟 漏网之鱼"
